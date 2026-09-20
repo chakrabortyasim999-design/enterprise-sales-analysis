@@ -1,45 +1,170 @@
-# Enterprise Operational Intelligence Pipeline (Global Retail Logistics)
+# Sales & Profitability Analytics Dashboard
 
-## 📌 Executive Summary
-This enterprise data solution builds an end-to-end data transformation pipeline and analytics engine for a global retail operations dataset containing 51,290 historical records. By processing multi-currency financial records and legacy staging database tables, this solution identifies core logistical inefficiencies and major margin leakage trends.
 
-### 💰 Quantified Business Impact:
-* **Margin Reclamation:** Identified critical corporate discounting thresholds that led to a net drop in product margins from 25.3% to 8.9%, providing senior leadership with data backing for a hard 15% discount cap.
-* **Operational Visibility:** Transformed raw text string extractions into structured, production-ready PostgreSQL relational layers, reducing corporate ad-hoc metric calculation time by 80%.
 
----
+## Executive Summary
 
-## 🛠️ Data Architecture & Tech Stack
-* **Storage & Infrastructure:** PostgreSQL / MySQL (Schema Blueprinting, Advanced Windows Functions, Staging ETL Layer)
-* **Data Engineering & ETL:** Python 3 (Pandas, NumPy data sanitization engine)
-* **Exploratory Data Science:** Seaborn, Matplotlib data visualization frameworks
-* **Business Intelligence:** Power BI (Interactive Operational Performance Ledger Dashboard)
+An end-to-end sales analytics solution designed to help management understand revenue, profitability, discounting behaviour and regional performance.
+
+The project analyses more than 51,000 historical sales records and transforms transactional data into management-level insights.
+
+# The central business question is:
+
+Where is the business generating revenue, where is margin being lost, and what actions could improve profitability?
 
 ---
 
-## 📊 Strategic Executive Insights Uncovered
+# Dashboard Preview
 
-### 1. Corporate Margin Erosion Curve
-Exploratory data modeling revealed that baseline sales transactions yield a sustainable **25.3% net profit margin**. However, cross-functional sales incentives pushing discounts above 20% create systemic margin erosion, plummeting net revenue yields down to **8.9%**.
-* **Strategic Recommendation:** Enforce programmatic control flags in the enterprise CRM layer capping mid-market discretionary sales discounts at a maximum of 15%.
-
-### 2. Regional Vulnerability Mapping
-Our profitability matrix heatmap identified clear geographical product variances. Technology divisions remain highly profitable across all sectors, whereas specific furniture sub-categories incur significant distribution-cost deficits within specific emerging economic zones due to overhead mismatches.
-
----
 
 ## 🗂️ Interactive Enterprise Dashboard
-*Take a screenshot of your Power BI dashboard page, save it as a file named `dashboard_preview.png`, upload it to your repository, and link it right below:*
-
-
-
 
 
 <img width="931" height="576" alt="dashboard preview" src="https://github.com/user-attachments/assets/561a32fe-804d-4726-acc8-e25daa4be3fa" />
 
 <img width="928" height="541" alt="over time profits " src="https://github.com/user-attachments/assets/b64c2bae-526b-4ad4-af6e-2375a689d622" />
 
+---
 
+Business Problem
+
+Revenue growth does not automatically mean profitable growth.
+
+Sales teams may increase revenue through aggressive discounting while simultaneously reducing margins.
+
+This analysis investigates:
+
+Which products generate the strongest margins?
+How does discounting affect profitability?
+Which regions perform well?
+Which product categories create margin pressure?
+Where should management focus corrective action?
+Dataset
+
+# The dataset contains more than 51,000 historical sales records covering:
+
+Sales transactions
+Product categories
+Regions
+Revenue
+Costs
+Profit
+Discounts
+Customer and order information
+Analytical Workflow
+Raw Sales Data
+      ↓
+Data Cleaning
+      ↓
+Python Transformation
+      ↓
+PostgreSQL Analytics
+      ↓
+Profitability Analysis
+      ↓
+Power BI Dashboard
+      ↓
+Management Recommendations
+Key Findings
+Discount & Margin Relationship
+
+The analysis identifies a strong relationship between higher discount levels and declining profitability.
+
+At higher discount levels, revenue may continue to increase while profit margins deteriorate.
+
+Profitability Concentration
+
+Profitability varies significantly across product categories and regions.
+
+This indicates that sales performance should be evaluated using both revenue and margin metrics.
+
+Regional Performance
+
+The regional analysis identifies areas where product mix and distribution economics create different profitability outcomes.
+
+Business Recommendations
+Monitor discount levels alongside revenue rather than evaluating sales performance using revenue alone.
+Establish discount thresholds for products or customer segments where margins become unacceptable.
+Evaluate regional performance using both revenue and profitability.
+Prioritise high-margin products in sales and promotional strategies.
+Create management alerts for significant margin deterioration.
+Management KPIs
+
+# The dashboard supports monitoring of:
+
+Total Sales
+Total Profit
+Profit Margin
+Discount %
+Orders
+Average Order Value
+Sales by Region
+Profit by Product Category
+Sales Growth
+Profit Trend
+Business Value
+
+# This type of sales analytics solution can help management:
+
+Identify margin leakage
+Understand discount impact
+Compare regional profitability
+Identify high-performing products
+Improve sales decision-making
+Establish profitability monitoring
+Technology
+
+SQL: PostgreSQL
+
+
+Python: Pandas, NumPy, Matplotlib
+
+
+BI: Power BI
+
+
+Analytics: Sales Analysis, Profitability Analysis, Margin Analysis, Regional Analysis
+
+
+Repository Structure
+
+Sales_Profitability_Analytics/
+│
+├── README.md
+│
+├── data/
+│   ├── raw/
+│   └── processed/
+│
+├── sql/
+│   └── sales_analysis.sql
+│
+├── notebooks/
+│   └── sales_analysis.ipynb
+│
+├── dashboard/
+│   └── README.md
+│
+├── screenshots/
+│   ├── dashboard_preview.png
+│   └── profit_over_time.png
+│
+└── documentation/
+    └── project_report.pdf
+
+
+GitHub Code
+SQL Analysis
+Python Analysis
+Disclaimer
+
+This is a portfolio analytics project using historical dataset information. The recommendations demonstrate how sales and profitability analytics can support business decisions and do not represent measured results from a real client engagement.
+
+Author
+
+Asim Chakraborty
+
+Data Analyst | SQL | Power BI | Excel | Python
 
 
 
